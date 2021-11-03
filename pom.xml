@@ -49,7 +49,12 @@
             <artifactId>groovy-all</artifactId>
             <version>${groovy.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>de.jodamob.kotlin</groupId>
+            <artifactId>kotlin-runner-spock</artifactId>
+            <version>0.3.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -60,8 +65,10 @@
                 <version>2.19.1</version>
                 <configuration>
                     <includes>
-                        <include>**/*Spec.java</include>
-                        <include>**/*Test.java</include>
+                        <include>**/*Spec.kt</include>
+                        <include>**/*Test.kt</include>
+                        <include>**/*Spec.groovy</include>
+                        <include>**/*Test.groovy</include>
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
