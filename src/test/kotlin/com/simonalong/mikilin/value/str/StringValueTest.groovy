@@ -5,7 +5,8 @@ import org.junit.Assert
 import spock.lang.Specification
 
 /**
- * @author shizi* @since 2021-11-03 22:40:28
+ * @author shizi
+ * @since 2021-11-03 22:40:28
  */
 class StringValueTest extends Specification{
 
