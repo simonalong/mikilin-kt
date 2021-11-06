@@ -4,15 +4,14 @@ package com.simonalong.mikilin
  * @author     shizi
  * @since      2021-10-27 21:08:21
  */
-class MkValidators {
+object MkValidators {
 
-    fun check(value: Any): Boolean {
-        return true
-    }
-//    companion object {
-//        fun check(value: Any): Boolean {
-//            return true
-//        }
+//    fun check(value: Any): Boolean {
+//        return true
+//    }
+        fun check(value: Any?): Boolean {
+            return true
+        }
 
 //        public fun check(value: Any, vararg fieldSet: String): Boolean {
 //            // todo
@@ -41,5 +40,4 @@ class MkValidators {
 //        public fun validate(group: String, value: Any, vararg fieldSet: String) {
 //            // todo
 //        }
-//    }
 }

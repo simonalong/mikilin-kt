@@ -13,66 +13,17 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <lombok.version>1.18.0</lombok.version>
-        <fastjson.version>1.2.46</fastjson.version>
-        <spock.version>1.2-groovy-2.4</spock.version>
+
         <slf4j.version>1.7.25</slf4j.version>
-        <groovy.version>2.4.8</groovy.version>
         <spring.version>5.1.5.RELEASE</spring.version>
-        <logback.version>1.2.3</logback.version>
         <aspectj.version>1.9.5</aspectj.version>
-        <tomcat.version>9.0.48</tomcat.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>${fastjson.version}</version>
-        </dependency>
-
-        <!--spock测试框架-->
-        <dependency>
-            <groupId>org.spockframework</groupId>
-            <artifactId>spock-core</artifactId>
-            <version>${spock.version}</version>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <artifactId>groovy-all</artifactId>
-                    <groupId>org.codehaus.groovy</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy-all</artifactId>
-            <version>${groovy.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>de.jodamob.kotlin</groupId>
-            <artifactId>kotlin-runner-spock</artifactId>
-            <version>0.3.1</version>
-            <scope>test</scope>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <!--maven支持spock测试框架-->
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.19.1</version>
-                <configuration>
-                    <includes>
-                        <include>**/*Spec.kt</include>
-                        <include>**/*Test.kt</include>
-                        <include>**/*Spec.groovy</include>
-                        <include>**/*Test.groovy</include>
-                    </includes>
-                    <testFailureIgnore>true</testFailureIgnore>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>

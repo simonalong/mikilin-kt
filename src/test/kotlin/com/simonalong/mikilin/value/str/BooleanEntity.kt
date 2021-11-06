@@ -8,6 +8,6 @@ import com.simonalong.mikilin.annotation.Matcher
  */
 class BooleanEntity {
 
-    @Matcher(value = ["true", "null"])
-    val flag: Boolean? = null
+    @Matcher(value = arrayOf("name", "value"))
+    var flag: String? = null
 }

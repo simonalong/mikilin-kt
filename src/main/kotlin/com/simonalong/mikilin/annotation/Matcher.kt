@@ -9,6 +9,6 @@ package com.simonalong.mikilin.annotation
 @Retention(AnnotationRetention.SOURCE)
 @MustBeDocumented
 annotation class Matcher(
-        val value: Array<String> = []
+        val value: Array<String>
 )
 
