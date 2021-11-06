@@ -1,8 +1,8 @@
 package com.simonalong.mikilin.value.str
 
 import com.simonalong.mikilin.MkValidators
-import org.jetbrains.annotations.TestOnly
 import org.junit.Test
+import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
 /**
@@ -12,7 +12,9 @@ import kotlin.test.assertTrue
 class StringValueTest {
 
     @Test
-    fun test1() {
-        assertTrue(MkValidators.check("sdf"))
+    fun numberTest() {
+        assertTrue(MkValidators.check(BooleanEntity(true)))
+//        assertFalse(MkValidators.check(BooleanEntity(false)))
+//        assertTrue(MkValidators.check(BooleanEntity(null)))
     }
 }
