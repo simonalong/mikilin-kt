@@ -6,38 +6,36 @@ package com.simonalong.mikilin
  */
 object MkValidators {
 
-//    fun check(value: Any): Boolean {
-//        return true
-//    }
+
         fun check(value: Any?): Boolean {
             return true
         }
 
-//        public fun check(value: Any, vararg fieldSet: String): Boolean {
-//            // todo
-//        }
-//
-//        public fun check(group: String, value: Any): Boolean {
-//            // todo
-//        }
-//
-//        public fun check(group: String, value: Any, vararg fieldSet: String): Boolean {
-//            // todo
-//        }
-//
-//        public fun validate(value: Any) {
-//            // todo
-//        }
-//
-//        public fun validate(value: Any, vararg fieldSet: String) {
-//            // todo
-//        }
-//
-//        public fun validate(group: String, value: Any) {
-//            // todo
-//        }
-//
-//        public fun validate(group: String, value: Any, vararg fieldSet: String) {
-//            // todo
-//        }
+        fun check(value: Any, vararg fieldSet: String): Boolean {
+            return true
+        }
+
+        fun check(group: String, value: Any): Boolean {
+            return true
+        }
+
+        fun check(group: String, value: Any, vararg fieldSet: String): Boolean {
+            return true
+        }
+
+        fun validate(value: Any) {
+            // todo
+        }
+
+        fun validate(value: Any, vararg fieldSet: String) {
+            // todo
+        }
+
+        fun validate(group: String, value: Any) {
+            // todo
+        }
+
+        fun validate(group: String, value: Any, vararg fieldSet: String) {
+            // todo
+        }
 }
